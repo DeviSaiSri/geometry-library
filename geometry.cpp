@@ -21,3 +21,6 @@ std::pair<double, double> rotate(double x, double y, double angle_deg) {
         x * sin_angle + y * cos_angle
     };
 }
+std::pair<double, double> scale(double x, double y, double factor) {
+    return {x * factor, y * factor};
+}

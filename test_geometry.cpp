@@ -26,6 +26,18 @@ int main() {
     assert(approx_equal(p2.first, -1.0));
     assert(approx_equal(p2.second, 0.0));
 
+    auto s1 = scale(2, 3, 2);
+    assert(approx_equal(s1.first, 4.0));
+    assert(approx_equal(s1.second, 6.0));
+
+    auto s2 = scale(5, 4, 3);
+    assert(approx_equal(s2.first, 15.0));
+    assert(approx_equal(s2.second, 12.0));
+
+    auto s3 = scale(2, 3, 0.5);
+    assert(approx_equal(s3.first, 1.0));
+    assert(approx_equal(s3.second, 1.5));
+
     std::cout << "All tests passed!" << std::endl;
 
     return 0;
